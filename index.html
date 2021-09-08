@@ -86,7 +86,7 @@
           <div style="overflow-x:auto;">
           <table>
             <tr>
-              <td>User_ID</td>
+              <th>User_ID</th>
               <th>First Name</th>
               <th>Last Name</th>
               <th>Phone No.</th>
@@ -192,16 +192,107 @@
       </div>
 
      </div>
+     <div class="headings" id="userlist">
+      <h1>Packages</h1>
 
     </div>
+    <div class="tablebox">
+      <div style="overflow-x:auto;">
+      <table>
+        <tr>
+          <th>Packages_ID</th>
+          <th>Package Name</th>
+          <th>Cost</th>
+          <th>Tenure (Months)</th>
+          <th>Total Users</th>
+          <th>Current Users</th>
+          <th>Date of Enforcement</th>
+          <th>Activation</th>
+          <th>Updation</th>
+
+        </tr>
+        <tr>
+          <td>1453FQ</td>
+          <td>Alpha</td>
+          <td>2500</td>
+          <td>3</td>
+          <td>85</td>
+          <td>34</td>
+          <td>dd-mm-yyyy</td>
+          <td>Deactivate</td>
+          <td><button class="open-button" onclick="openForm()">Update</button></td>
+      
+        </tr>
+        <tr>
+          <td>1453FQ</td>
+          <td>Alpha</td>
+          <td>2500</td>
+          <td>3</td>
+          <td>85</td>
+          <td>34</td>
+          <td>dd-mm-yyyy</td>
+          <td>Deactivate</td>
+          <td><button class="open-button" onclick="openForm()">Update</button></td>
+      
+        </tr>
+        <tr>
+          <td>1453FQ</td>
+          <td>Alpha</td>
+          <td>2500</td>
+          <td>3</td>
+          <td>85</td>
+          <td>34</td>
+          <td>dd-mm-yyyy</td>
+          <td>Deactivate</td>
+          <td><button class="open-button" onclick="openForm()">Update</button></td>
+      
+        </tr>
+      </table>
+    </div>
+
+   </div>
+   <!-- next -->
+   
+
+    </div>
+    <div class="form-popup" id="myForm">
+      <form action="" class="form-container">
+        <h1>1453FQ</h1>
     
+        <label for="packagename"><b>Package Name</b></label>
+        <input type="text" placeholder="Alpha" name="packagename">
+        
+         
+        <label for="packageprice"><b>Package Price</b></label>
+        <input type="text" placeholder="2500" name="packageprice" >
+        
+         
+        <label for="packagetenure"><b>Package Tenure</b></label>
+        <input type="number" placeholder="3" name="packagetenure" >
+
+        <label for="status"><b>Activation</b></label>
+
+        <select name="packagestatus" id="status">
+          <option value="Actiavte">Activate</option>
+          <option value="Deactivate">Deactivate</option>
+
+        </select>
+        <button type="submit" class="btn">Apply</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
     
    
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  
-  <!-- Vendor JS Files -->
-
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      </script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
